@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/random-weather/static/css/main.b89f27e3.css",
+    "main.js": "/random-weather/static/js/main.4369c9cb.js",
+    "index.html": "/random-weather/index.html",
+    "main.b89f27e3.css.map": "/random-weather/static/css/main.b89f27e3.css.map",
+    "main.4369c9cb.js.map": "/random-weather/static/js/main.4369c9cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b89f27e3.css",
+    "static/js/main.4369c9cb.js"
+  ]
+}
