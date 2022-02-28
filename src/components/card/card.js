@@ -9,7 +9,7 @@ const Card = ({id, name, country, imgId, lon, lat, zoomX}) => {
   const [temperature, setTemperature] = useState(0);
   const [img, setImg] = useState([]);
   const [map, setMap] = useState(false);
-  const [lonLat, setLonLat] = useState([lon, lat])
+  const [lonLat, setLonLat] = useState([lon, lat]);
 
   const apiKey = 'baee1a1250bc342c86cdcc1e566e7c04';
   const url = `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${apiKey}`;
@@ -25,12 +25,9 @@ const Card = ({id, name, country, imgId, lon, lat, zoomX}) => {
       const data = await response.json();
       const responseImg = await fetch(pixabayUrl);
       const dataImg = await responseImg.json();
-      // const {hits} = dataImg;
-      // console.log('hits', hits[0].pageURL);
       setLoading(false);
       setTemperature(Math.round(kelvinToCelsius(data.main.temp)));
       setImg(dataImg.hits[0].webformatURL);
-      //console.log('use state value', img);
     }catch (error){
       setLoading(false);
       console.log(error);
