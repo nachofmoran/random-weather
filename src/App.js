@@ -12,7 +12,6 @@ const zone4= cities.filter((city) => city.zone === 4);
 const zone5= cities.filter((city) => city.zone === 5);
 const zone6= cities.filter((city) => city.zone === 6);
 const world = [zone1, zone2, zone3, zone4, zone5, zone6];
-//const initial = [zone1[0], zone2[0], zone3[0], zone4[0], zone5[0], zone6[0]];
 
 const initial = world.map((zone) => {
   const random = Math.floor(Math.random() * zone.length);
